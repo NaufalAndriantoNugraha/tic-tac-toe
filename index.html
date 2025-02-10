@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/tic-tac-toe-icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Import font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -11,7 +25,14 @@
       <h1>Tic-Tac-Toe</h1>
     </header>
     <main>
-      <h2 class="annoucement">Player X's turn</h2>
+      <section class="annoucement">
+        <div class="score-container">
+          <div class="win">Player X: 0</div>
+          <div class="draw">Draw: 0</div>
+          <div class="lost">Player Y: 0</div>
+        </div>
+        <p class="players-turn">Player X's turn</p>
+      </section>
       <div class="board">
         <div class="cell"></div>
         <div class="cell"></div>
@@ -23,10 +44,19 @@
         <div class="cell"></div>
         <div class="cell"></div>
       </div>
-      <button type="button">Reset</button>
+      <section class="buttons">
+        <button type="button start">Start</button>
+        <button type="button rest">Reset</button>
+      </section>
     </main>
     <footer>
-      <p>Created by Naufal Andrianto Nugraha</p>
+      <p>
+        Created by
+        <a href=""
+          >Naufal Andrianto Nugraha
+          <img src="/icons8-github.svg" alt="#" aria-hidden="true"
+        /></a>
+      </p>
     </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
