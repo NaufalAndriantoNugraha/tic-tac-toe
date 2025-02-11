@@ -21,6 +21,117 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-top: 1.5em;
+}
+
+main {
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.25rem;
+}
+
+.score-container {
+  display: flex;
+  gap: 20px;
+}
+
+.players-turn {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 100%;
+}
+
+.button {
+  all: unset;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button.start {
+  border-color: green;
+  background-color: green;
+  color: white;
+}
+
+.button.start:hover {
+  background-color: white;
+  color: green;
+}
+
+.button.start:active {
+  background-color: green;
+  color: white;
+}
+
+.button.reset {
+  border-color: crimson;
+  background-color: crimson;
+  color: white;
+}
+
+.button.reset:hover {
+  background-color: white;
+  color: crimson;
+}
+
+.button.reset:active {
+  background-color: crimson;
+  color: white;
+}
+
+footer {
+  margin-top: 2.5em;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
