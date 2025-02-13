@@ -57,7 +57,7 @@ main {
 .board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 
 .cell {
@@ -66,6 +66,11 @@ main {
   border: 2px solid black;
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .buttons {
